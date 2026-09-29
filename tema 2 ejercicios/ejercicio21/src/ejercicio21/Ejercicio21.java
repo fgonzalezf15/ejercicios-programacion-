@@ -17,27 +17,27 @@ public class Ejercicio21 {
         Scanner entrada=new Scanner(System.in);
         int tiempo;
         int resto;
-        int calculo1;
-        int calculo2;
-        int calculo3;
-        int calculo4;
+        int dias;
+        int horas;
+        int minutos;
+        int segundos;
         
-        System.out.println("Porfavor, introduzca un número de segundos");
+        System.out.println("Porfavor, introduzca un número de segundos");//pedimos que ponga un numero de segundos
         tiempo=entrada.nextInt();
         
-        calculo1=tiempo/86400;
-        resto=tiempo%86400;
+        dias=tiempo/86400;
+        resto=tiempo%86400;// con esto calculamos los dias y con el resto lo usamos para calcular las horas
         
-        calculo2=resto/3600;
+        horas=resto/3600;// con esto calculamos las horas y con el resto de esta lo usamos para calcular los minutos y las horas
         resto=resto%3600;
         
-        calculo3=resto/60;
+        minutos=resto/60;
         
-        calculo4=resto%60;
+        segundos=resto%60;
         
         System.out.println(tiempo+" segundos hacen un total de: "
-        +calculo1+ "días,"+calculo2+"horas,"+calculo3+"minuto y "+calculo4+
-                "segundos");
+        +dias+ "días,"+horas+"horas,"+minutos+"minuto y "+segundos+
+                " segundos");// dependiendo del numero de segundos tendremos la respuesta despues de hacer los calculos e indicamos en que apartado va cada uno de los resultados
         
         
         // TODO code application logic here
