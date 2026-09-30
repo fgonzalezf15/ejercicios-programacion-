@@ -14,16 +14,28 @@ public class Ejercicio3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic here+
         Scanner entrada=new Scanner (System.in);
         int num1;
         int num2;
         int num3;
+        int mayor;
         System.out.println("Porfavor, introduzca el primer numero");
         num1=entrada.nextInt();
         System.out.println("Ahora, introduzca el segundo numero");
         num2=entrada.nextInt();
-        System.out.println("Por útimo, introduzca un tercer numero");
+        System.out.println("Por último, introduzca un tercer numero");
+        num3=entrada.nextInt();
+        
+        if (num1>=num2&&num1>=num3){
+        mayor=num1;
+        }else if(num2>=num1&&num2>=num3){
+         mayor=num2;
+        }else{
+        mayor=num3;
+        }
+        System.out.println("El número mayor de los introducidos es el " + mayor);
+
         
     }
     
