@@ -15,13 +15,15 @@ public class Ejercicio12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num1=11;
-        int num2=133;
+        int num=12;
         do{
-           if(num1%2==0);
-        }while(num1<=num2);
+            System.out.println(num);
+            num += 2; 
+        } while (num<=132); 
+
+
         
-         System.out.println(num1);
+        System.out.println(num);
     }
     
 }
