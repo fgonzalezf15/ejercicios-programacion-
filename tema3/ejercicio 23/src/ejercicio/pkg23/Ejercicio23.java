@@ -16,19 +16,25 @@ public class Ejercicio23 {
     public static void main(String[] args) {
         // TODO code application logic here
         int num1;
+        int num2=1;
         Scanner entrada= new Scanner (System.in);
             System.out.println("Introduce un numero");
             num1=entrada.nextInt();
         do{
-           if (num1<= 1) {
-                System.out.println("El numero que tiene que ser mayor a 1");
-        
-        }while(num1<=1);
-        
-        for(int num2=1;num2>=num1;num2++){
+            if(num1<=1) {
+               System.out.println("El numero tiene que ser mayor a 1");
+            }
+
+        }while(num1<=num2);
+        do{
             System.out.println(num2);
+            num2++;
             
-        }
+        }while(num2<=num1);
+
+    }
+}
+    
     
        
     
