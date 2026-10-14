@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ejercicio21;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -23,10 +22,10 @@ public class Ejercicio21 {
     try{
         Scanner entrada=new Scanner (System.in);
         
-        System.out.print("Introduce un numero: ");
+        System.out.print("Introduce un número: ");
         num1=entrada.nextInt();
         
-        System.out.print("Introduce otro numero: ");
+        System.out.print("Introduce otro número: ");
         num2=entrada.nextInt();
         
         resultado=num1/num2;
@@ -37,7 +36,7 @@ public class Ejercicio21 {
         System.out.println("Dato no valido");
     
     } finally{
-        System.out.println("Bloque final"); 
+        System.out.println(" Bloque final"); 
         
     }
     }

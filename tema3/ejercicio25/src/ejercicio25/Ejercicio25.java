@@ -15,16 +15,19 @@ public class Ejercicio25 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    int total = 0;
-        for(int num=17;num<139;num+=2){
+       int num;
+       int total=0;
+
+        for(num=17;num<139;num++){
             if(num%2==0){
-                total++;
+                total=total+num;
                 System.out.println(num);
         
             }
         }
+        System.out.println("Total de nÚmeros pares: "+total);
         
-        System.out.println("Total de numeros pares: "+total);
+        
     }
     
 }

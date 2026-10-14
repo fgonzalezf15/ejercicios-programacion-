@@ -18,27 +18,27 @@ public class Ejercicio22 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-            int num1;
+    int num1;
     int num2;
     int resultado;
     try{
         Scanner entrada=new Scanner (System.in);
         
-        System.out.print("Introduce un numero: ");
+        System.out.print("Introduce un número: ");
         num1=entrada.nextInt();
         
-        System.out.print("Introduce otro numero: ");
+        System.out.print("Introduce otro número: ");
         num2=entrada.nextInt();
         
         resultado=num1+num2;
                 
         System.out.print("El resultado seria: "+resultado);
         
-    } catch(InputMismatchException e){
-        System.out.print("Dato no valido, tienes que introducir un numero entero");
+    }catch(InputMismatchException e){
+        System.out.print("Dato no valido, tienes que introducir un número entero");
     } 
     finally{
-        System.out.println("Bloque final");
+        System.out.println(" Bloque final");
     }
     }
     

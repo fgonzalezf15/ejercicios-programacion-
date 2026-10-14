@@ -18,11 +18,11 @@ public class Ejercicio23 {
         int num1;
         int num2=1;
         Scanner entrada= new Scanner (System.in);
-            System.out.println("Introduce un numero");
+            System.out.println("Introduce un número");
             num1=entrada.nextInt();
         do{
-            if(num1<=1) {
-               System.out.println("El numero tiene que ser mayor a 1");
+            if(num1<=1){
+               System.out.println("El número tiene que ser mayor a 1");
             }
 
         }while(num1<=num2);
