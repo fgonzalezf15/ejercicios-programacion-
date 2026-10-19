@@ -15,6 +15,18 @@ public class Ejercicio28 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+          // Generamos un número aleatorio entre 1 y 100
+        double aleatorio = Math.floor(Math.random() * 100 + 1);
+
+        // Comprobamos si el número es par o impar
+        if(aleatorio%2==0){
+        System.out.println("El numero es: "+aleatorio);
+        System.out.println("Numero par");
+        }else{
+        System.out.println("El numero es: "+aleatorio);
+        System.out.println("Numero impar");
+        }
+        
     }
     
 }
