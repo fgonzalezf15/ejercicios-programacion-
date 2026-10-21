@@ -13,21 +13,37 @@ import static tema4ejercicio2.Tema4ejercicio2.sumar;
  * @author alumno
  */
 public class Tema4ejercicio2 {
+    
+    /**
+     * pedimos un número
+     * @return 
+     */
 public static int pedirNumero(){
     Scanner entrada =new Scanner(System.in);
     System.out.println("Por favor, introduzca un numero");
     int num=entrada.nextInt();
     return num;
 }
-
-public static int sumar(int num1){
+/**
+ * suma los números dados
+ * @param num1
+ * @param num2
+ * @return resultado
+ */
+public static int sumar(int num1, int num2){
         int resultado=num1+num2;
         return resultado;
 
 }
-
+/**
+ * multiplica los números dados
+ * @param num1
+ * @param num2
+ * @return resultado
+ */
 public static int multiplicar(int num1, int num2){
-    return num1*num2;
+    int resultado=num1*num2;
+    return resultado;
 }
     /**
      * @param args the command line arguments
@@ -39,17 +55,13 @@ public static int multiplicar(int num1, int num2){
         int num2=pedirNumero();
         
         if(num1<=10){
-            int resultado=sumar(num1+num2);
-            System.out.println("La operación que se realizó es sumay el resultado es "+resultado);
+            int resultado=sumar(num1,num2);
+            System.out.println("La operación que se realizó es sumar y el resultado es "+resultado);
         }else if(num1>10){
-            int resultado=multiplicar(num1*num2);
+            int resultado=multiplicar(num1,num2);
             System.out.println("La operación que se realizó es producto y el resultado es "+resultado);
         
         }
     }
 
-    private static int multiplicar(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }
