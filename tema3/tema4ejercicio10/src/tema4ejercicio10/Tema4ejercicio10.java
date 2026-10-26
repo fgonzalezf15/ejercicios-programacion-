@@ -32,7 +32,6 @@ public class Tema4ejercicio10 {
             System.out.println(num1+"x"+num2+"="+(num1*num2));
         }
         return num1+"x"+num2+"="+(num1*num2);
-        
     }
     
     /**
@@ -40,7 +39,8 @@ public class Tema4ejercicio10 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Introduzca un numero para calcular su tabla de multiplicar ");
+        System.out.println("Introduzca un numero para calcular su tabla de "
+                + "multiplicar ");
         int num1=pedirNumero();
         int num2=0;
         
