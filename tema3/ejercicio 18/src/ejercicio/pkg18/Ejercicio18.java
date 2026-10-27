@@ -17,21 +17,21 @@ public class Ejercicio18 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         int contraseña;
-        int fallos=0;
-        do{
+        int fallos = 0;
+        do {
             System.out.print("Introduce la contraseña: ");
             contraseña = entrada.nextInt();
             fallos++;
-            if(contraseña==2011){
-            System.out.println("Contraseña correcta.");
-            }else{
-            if(fallos==3){
-            System.out.println("Error de acceso");
-            }else{
-            System.out.println("Contraseña incorrecta.");
+            if (contraseña == 2011) {
+                System.out.println("Contraseña correcta.");
+            } else {
+                if (fallos == 3) {
+                    System.out.println("Error de acceso");
+                } else {
+                    System.out.println("Contraseña incorrecta.");
+                }
             }
-            }
-        }while(contraseña!=2011&&fallos<3); 
+        } while (contraseña != 2011 && fallos < 3);
     }
-    
+
 }

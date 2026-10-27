@@ -17,17 +17,20 @@ public class Tema4ejercicio12 {
      *
      * @param contraseña
      */
-    public static void pedirContraseña(int contraseña) {
+    public static int pedirContraseña(int contraseña) {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Introduce la contraseña: ");
         contraseña = entrada.nextInt();
+        return contraseña;
     }
-// Método para comprobar si la contraseña introducida es correcta
-
-    public static boolean validarContraseña(String contraseña) {
-        return contraseña.equals("DAW123");
+    /**
+    * 
+    * @param contraseña
+    * @return 
+    */
+    public static boolean validarContraseña(int contraseña) {
+        return validarContraseña("2011");
     }
-
     /**
      * validamos la contraseña dada
      *
@@ -41,21 +44,20 @@ public class Tema4ejercicio12 {
                 System.out.println("Contraseña correcta.");
             } else {
                 if (fallos == 3) {
-                    System.out.println("Error de acceso");
+                    System.out.println("Error de acceso ");
                 } else {
-                    System.out.println("Contraseña incorrecta.");
+                    System.out.println("Contraseña incorrecta ");
                 }
             }
         } while (contraseña != 2011 && fallos < 3);
         return contraseña;
     }
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        int contraseña;
         // TODO code application logic here
-        int num=pedirContraseña();
         
     }
 }
