@@ -41,8 +41,6 @@ public class Tema4ejercicio16 {
         double seno=Math.sin(45);
         System.out.println("Seno de 45 grados es "+seno);
         
-        
-        
     }
     
 }
