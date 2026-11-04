@@ -28,7 +28,7 @@ public class Tema4ejercicio12 {
     * @param contraseña
     * @return 
     */
-    public static boolean validarContraseña(int contraseña) {
+    public static int validarContraseña(String contraseña) {
         return validarContraseña("2011");
     }
     /**
@@ -56,7 +56,9 @@ public class Tema4ejercicio12 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int contraseña;
+        int contraseña=pedirContraseña;
+        int fallos;
+        resultado(contraseña, fallos);
         // TODO code application logic here
         
     }

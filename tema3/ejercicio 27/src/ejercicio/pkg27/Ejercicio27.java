@@ -17,6 +17,7 @@ public class Ejercicio27 {
         // TODO code application logic here
        Scanner entrada = new Scanner(System.in);
         int num1;
+                
         int num2;       
         System.out.print("Introduzca el primer numero: ");
         num1=entrada.nextInt();

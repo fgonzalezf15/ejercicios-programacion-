@@ -55,7 +55,7 @@ public class Tema4ejercicio21 {
                 suma = suma + num3;
             }
         }
-        System.out.println("La suma de los números pares es: " + suma);
+        System.out.println("La suma de los números pares es " + suma);
     }
 
     /**
